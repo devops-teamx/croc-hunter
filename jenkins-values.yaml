@@ -3,9 +3,9 @@
 # helm --namespace jenkins --name jenkins -f ./jenkins-values.yaml install stable/jenkins
 
 Master:
-  ImageTag: "2.74"
+  ImageTag: "2.121.1"
   Memory: "512Mi"
-  HostName: jenkins.acs.az.estrado.io
+  HostName: jenkins.akilimawazo.info
   ServiceType: ClusterIP
   InstallPlugins:
       - kubernetes:0.12
@@ -31,9 +31,9 @@ Master:
       kubernetes.io/tls-acme: "true"
 
     TLS:
-      - secretName: jenkins.acs.az.estrado.io
+      - secretName: jenkins.akilimawazo.info
         hosts:
-          - jenkins.acs.az.estrado.io
+          - jenkins.akilimawazo.info
 
 Agent:
   Enabled: false
