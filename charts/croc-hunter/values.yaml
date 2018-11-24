@@ -13,8 +13,8 @@ imageTag: "latest"
 imagePullPolicy: "Always"
 ## If you have a private registry you specify a secret to use
 #imagePullSecrets:
-cpu: "10m"
-memory: "128Mi"
+cpu: "1"
+memory: "1 GiB"
 ## Ingress settings
 ingress:
   enabled: true
