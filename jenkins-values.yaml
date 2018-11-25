@@ -4,7 +4,7 @@
 
 Master:
   ImageTag: "2.89.3"
-  Memory: "512Mi"
+  Memory: "2048Mi"
   HostName: jenkins.akilimawazo.info
   ServiceType: ClusterIP
   InstallPlugins:
